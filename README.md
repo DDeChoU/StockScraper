@@ -1,9 +1,9 @@
-#StockScraper
+# StockScraper
 The application takes in a stock tick symbol and returns the stock's high, low, open and close prices today.
 
 author: Guangli Dai
 
-##Pre-requisites
+## Pre-requisites
 The python version used is Python 3.8.
 The following packages are required (also given in requirements.txt):
 
@@ -24,7 +24,7 @@ The following packages are required (also given in requirements.txt):
 - yfinance==0.1.55
 
 
-##Usage
+## Usage
 To install the pre-requisites using requirements.txt:
 ```
 pip install -r requirements.txt
@@ -35,7 +35,7 @@ python3 StockScraper.py ISRG
 python3 UniTest.py #used to run the unit tests
 ```
 
-##Architecture of the Application
+## Architecture of the Application
 
 The application is implemented in StockScraper.py, which includes two classes and a main function.
 
@@ -53,18 +53,18 @@ The application is implemented in StockScraper.py, which includes two classes an
 
 
 
-###Inputs
+### Inputs
 
 - Inputs are given as command line arguments.
 - The input should be a valid stock tick symbol (capital-sensitive).
 - If no inputs are given, a default stock stick symbol, i.e., ISRG, will be used.
 
-###Outputs
+### Outputs
 
 - The application presents the result or the error message in a popup window.
 - Data presented includes the stock's high, low, open and close prices today.
 
-###Exception Handling
+### Exception Handling
 
 The current version of StockScraper will show a popup window with warning messages regarding the following erros confronted:
 
@@ -72,7 +72,7 @@ The current version of StockScraper will show a popup window with warning messag
 - Cannot access the information for today's prices of the given stock. The reason may be that the network connection fails or that the stock information today is not available in the target database.
 
 
-##Other files in the directory
+## Other files in the directory
 
 - UniTest.py: This file includes the unit tests for the methods in StockScraper.py
 
